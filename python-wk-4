@@ -1,0 +1,18 @@
+file = open("./pythonWK-4-Assignment Week_four.pdf", "w")
+file.write("Abebe, Kebed, Aleme,Ethiopia" )
+
+# reading content from the file
+
+file = open("./pythonWK-4-Assignment Week_four.pdf", "r")
+content = file.read() 
+print(content)
+   
+# file.close()
+file = open("./pythonWK-4-Assignment Week_four.pdf", "a")
+file.write("I love my country Ethiopia")
+
+try:
+    with open("./pythonWK-4-Assignment Week_four.pdf", "r") as file:
+        data = file.read()
+except FileNotFoundError:
+    print("File not found. Please check the filename.")
